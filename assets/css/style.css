@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  
+  html,
+  body {
+    min-width: 320px;
+    position: relative;
+    opacity: 1;
+  }
+  
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.page-header {
+    width: 100%;
+    background-color: rgb(177, 174, 174);
+}
+
+.top-bar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.top-bar-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+}
+
+.top-bar-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.top-bar-item1{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    list-style: none;
+}
+
+.top-bar-item2{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    list-style: none;
+}
+
+.top-bar-item3{
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    list-style: none;
+}
+
+
+.hero{
+    width: 100%;
+    background-image: url("../images/hero-image3.jpg");
+    height: 690px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.hero-text {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+.top-bar-menu{
+    padding-right: 20px;
+}
+.gallery{
+    width: 100%;
+}
+
+.gallery-content{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gallery-header{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 30px 0;
+}
+
+.gallery-cards{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gallery-card{
+    width: 550px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.card1{
+    background-image: url("../images/pic1.jpg");
+}
+
+.card2{
+    background-image: url("../images/pic2.jpg");
+}
+
+.card3{
+    background-image: url("../images/pic3.jpg");
+}
+
+.card4{
+    background-image: url("../images/pic4.jpg");
+}
+
+.card5{
+    background-image: url("../images/pic5.jpg");
+}
+
+.card6{
+    background-image: url("../images/pic6.jpg");
+}
+
+.card-cta{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #1875bb;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+
+.card-cta:hover{
+    color: #000;
+    transition: all 0.1s ease;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-contact img{
+    width: 70px;
+    height: 58px;
+}
+
+.footer-text{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-phone{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footer-email{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footer-address{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 70px;
+}
+
+.footer-nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-header{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer-columns{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.footer-list-item{
+    margin-bottom: 15px;
+}
+
+.footer-list-item a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.footer-form{
+    margin-top: 50px;
+}
+
+.form-name{
+    padding: 10px 0 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+@media  screen and (max-width:1460px) {
+    .top-bar-menu{
+        padding-right: 20px;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+}
+
+@media  screen and (max-width:1199px) {
+    .gallery-header{
+        padding: 20px 15px;
+    }
+    
+    .gallery-cards{
+        padding: 0 15px;
+    }
+}
+
+
+@media  screen and (max-width:992px) {
+    .top-bar-item1{
+        display: none;
+    }
+
+    .gallery-header{
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav{
+        margin-top: 0;
+    }
+
+    .footer-form{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media  screen and (max-width:768px) {
+    .top-bar-item2{
+        display: none;
+    }
+
+    .hero-text{
+        width: 100%;
+        
+        font-size: 40px;
+    }
+
+    .gallery-header{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+}
+
+@media  screen and (max-width:576px) {
+    .hero{
+    height: 450px;
+    background-position: top center;
+    }
+
+    .hero-text{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media  screen and (max-width:470px) {
+    .top-bar-item3{
+        display: none;
+    }
+
+    .hero-text{
+        font-size: 25px;
+    }
+}
+
+

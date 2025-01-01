@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #fff;
+  }
+  
+  html,
+  body {
+    min-width: 320px;
+    position: relative;
+    opacity: 1;
+  }
+  
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page-header {
+    width: 100%;
+    background-color: rgb(177, 174, 174);
+  }
+  
+  
+  .article-content h1{
+      font-size: 45px;
+      font-weight: 600;
+      text-align: center;
+      padding: 30px 0;
+  }
+
+  .article-content img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+
+  @media  screen and (max-width:1460px) {
+    .top-bar-menu{
+        padding-right: 20px;
+    }
+  
+    .container{
+        padding: 0 20px;
+    }
+  }
+  
+  @media  screen and (max-width:992px) {
+    .top-bar-item1{
+        display: none;
+    }
+  
+    .article-content h1{
+      font-size: 40px;
+      padding: 30px 0;
+    }
+  
+    .footer-content{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-nav{
+      margin-top: 0;
+    }
+  
+    .footer-form{
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media  screen and (max-width:768px) {
+    .top-bar-item2{
+        display: none;
+    }
+  
+    .article-content img{
+      width: 100%;
+      max-width: 760px;
+    }
+  
+    .article-content h1{
+    font-size: 35px;
+    padding: 20px 0;
+    }
+  }
+  
+  @media  screen and (max-width:576px) {
+    .article-content h1{
+      font-size: 30px;
+      padding: 15px 0;
+    }
+  
+    .article-content p{
+      font-size: 18px;
+    }
+  }
+  
+  @media  screen and (max-width:470px) {
+    .top-bar-item3{
+        display: none;
+    }
+  }
