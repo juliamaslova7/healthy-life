@@ -24,11 +24,15 @@
     opacity: 1;
   }
 
-  
+  strong{
+    font-weight: bold;
+  }
+
   ul {
     list-style: disc;
     padding-left: 20px;
   }
+ 
   
 .container{
     width: 100%;
@@ -189,6 +193,17 @@
     padding: 10px 0 10px 10px;
     border-radius: 10px;
     border: none;
+  }
+
+  nav.breadcrumbs{
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  .breadcrumbs a{
+    text-decoration: none;
   }
 
   @media  screen and (max-width:1460px) {
