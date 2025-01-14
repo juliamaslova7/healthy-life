@@ -220,7 +220,7 @@ ul {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 15px;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .footer-form {
