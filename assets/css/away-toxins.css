@@ -82,6 +82,13 @@
     }
   
   }
+
+  @media screen and (max-width:840px){
+    .article-content img{
+      float: none;
+      max-width: none;
+    }
+  }
   
   @media  screen and (max-width:768px) {
     .top-bar-item2{

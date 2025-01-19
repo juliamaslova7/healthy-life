@@ -1,6 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: /healthy-shops.html
 Host: geralex.ru
 
 Sitemap: https://geralex.ru/sitemap.xml

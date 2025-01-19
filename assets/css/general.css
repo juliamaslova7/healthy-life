@@ -42,6 +42,13 @@ ul {
   padding: 0;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; /* Целостность контейнера поддерживается. */
+}
+
+
 .page-header {
   width: 100%;
   background-color: rgb(177, 174, 174);
@@ -97,40 +104,6 @@ ul {
 
 
 
-/* .top-bar-text {
-  font-size: 17px;
-  font-weight: 400;
-  color: #000;
-}
-
-.top-bar-menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-
-.top-bar-item1 {
-  font-size: 17px;
-  font-weight: 400;
-  color: #000;
-  list-style: none;
-}
-
-.top-bar-item2 {
-  font-size: 17px;
-  font-weight: 400;
-  color: #000;
-  list-style: none;
-}
-
-.top-bar-item3 {
-  font-size: 17px;
-  font-weight: 400;
-  color: #000;
-  list-style: none;
-} */
-
 .footer {
   width: 100%;
   background-color: lightgrey;
@@ -139,6 +112,7 @@ ul {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 
 }
 
@@ -154,26 +128,13 @@ ul {
   height: 58px;
 }
 
-.footer-text {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.footer-phone {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
 
 .footer-email {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 15px;
+  white-space: nowrap;
 }
 
 .footer-address {
@@ -190,41 +151,26 @@ ul {
   flex-direction: column;
 }
 
-.footer-nav-header {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
 
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  column-gap: 20px;
-  padding-inline-start: 0;
-  list-style: none;
+  gap: 50px;
 }
 
 .footer-list-item {
   margin-bottom: 15px;
 }
 
+/* .footer-list-item:last-of-type{
+  margin-bottom: 0;
+} */
+
 .footer-list-item a {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 15px;
-  /* text-decoration: none; */
-}
-
-.footer-form {
-  margin-top: 50px;
 }
 
 .input-search {
@@ -244,28 +190,6 @@ nav.breadcrumbs {
   text-decoration: none;
 }
 
-/* .footer {
-  width: 100%;
-  background-color: lightgrey;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.footer-contact img {
-  width: 70px;
-  height: 58px;
-}
 
 .footer-text {
   color: #000;
@@ -280,27 +204,6 @@ nav.breadcrumbs {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 15px;
-}
-
-.footer-email {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.footer-address {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 70px;
-}
-
-.footer-nav {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-nav-header {
@@ -319,18 +222,6 @@ nav.breadcrumbs {
   list-style: none;
 }
 
-.footer-list-item {
-  margin-bottom: 15px;
-}
-
-.footer-list-item a {
-  color: #000;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  text-decoration: none;
-}
-
 .footer-form {
   margin-top: 50px;
 }
@@ -339,7 +230,7 @@ nav.breadcrumbs {
   padding: 10px 0 10px 10px;
   border-radius: 10px;
   border: none;
-} */
+}
 
 @media screen and (max-width:1460px) {
   .top-bar-menu {
@@ -351,10 +242,17 @@ nav.breadcrumbs {
   }
 }
 
+@media screen and (max-width:1300px) {
+  .footer-address{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (max-width:1199px) {
   .footer-columns {
-    gap: 25px;
+    gap: 35px;
   }
 }
 
@@ -367,7 +265,6 @@ nav.breadcrumbs {
 
   .footer-content {
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .footer-nav {
@@ -378,7 +275,15 @@ nav.breadcrumbs {
     margin-top: 40px;
     margin-bottom: 60px;
   }
+  .footer-nav-header {
+    margin-bottom: 15px;
+  }
+  .footer-address{
+    flex-direction: row;
+    gap: 10px;
+  }
 }
+
 
 @media screen and (max-width:768px) {
   .top-bar-item2 {

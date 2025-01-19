@@ -110,6 +110,14 @@ body {
   }
 }
 
+@media screen and (max-width:840px){
+  .article-content img{
+    float: none;
+    max-width: none;
+  }
+}
+
+
 @media screen and (max-width:576px) {
   .article-content h1 {
     font-size: 30px;
