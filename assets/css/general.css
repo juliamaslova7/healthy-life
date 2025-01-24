@@ -232,6 +232,15 @@ nav.breadcrumbs {
   border: none;
 }
 
+
+
+@media screen and (min-width:1460px){
+  .footer{
+    margin-top: 30px;
+  }
+}
+
+
 @media screen and (max-width:1460px) {
   .top-bar-menu {
     padding-right: 20px;
