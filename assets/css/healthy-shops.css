@@ -48,15 +48,7 @@
 .article-content h2{
   font-size: 30px;
   font-weight: 500;
-}
-
-.article-content img{
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .article-content p{
@@ -65,10 +57,30 @@
   margin-bottom: 30px;
 }
 
-.article-content div{
+.article-content > p:last-of-type{
+  margin-bottom: 50px;
+}
+
+.shop{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.shop-infos{
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-info{
   display: flex;
   gap: 10px;
 }
+
+.shop-infos p{
+  margin-bottom: 15px;
+}
+
 
 
 @media screen and (min-width:1460px){
@@ -96,6 +108,17 @@
   .article-content h1{
     font-size: 40px;
     padding: 30px 0;
+  }
+
+  .article-content img{
+    width: 100%;
+    max-width: 992px;
+    height: auto;
+  }
+
+  .shop{
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 }
  
