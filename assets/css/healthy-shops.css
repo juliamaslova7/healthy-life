@@ -64,7 +64,7 @@
 .shop{
   display: flex;
   gap: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .shop-infos{
@@ -118,7 +118,7 @@
 
   .shop{
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
  

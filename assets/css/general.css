@@ -130,8 +130,8 @@ ul {
 }
 
 .footer-contact img {
-  width: 70px;
-  height: 58px;
+  width: 64px;
+  height: 64px;
 }
 
 
@@ -238,6 +238,10 @@ nav.breadcrumbs {
   border: none;
 }
 
+.footer-list-item a:hover{
+  color: darkblue;
+}
+
 
 .hamburger {
   height: 100%;
@@ -279,6 +283,15 @@ nav.breadcrumbs {
   top: 64px;
    /* li height */
   --mm-spn-item-height: 60px;
+}
+
+.menu-list-item a:hover
+{
+  color: darkblue;
+}
+
+.map{
+  margin-bottom: 30px;
 }
 
 
@@ -342,7 +355,13 @@ nav.breadcrumbs {
 
 
 @media screen and (max-width:576px) {
+  
   .top-bar-item3 {
     display: none;
   }
+
+  .map iframe{
+    height: 400px;
+  }
+
 }
